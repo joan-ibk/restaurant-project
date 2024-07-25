@@ -74,9 +74,9 @@ export default {
       return emailPattern.test(this.email);
     },
     isPasswordValid() {
-      const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
-      return passwordPattern.test(this.password);
-    }
+    const passwordPattern = /^(?=.*[a-z])(?=.*\d)[a-z\d]{8,}$/;
+    return passwordPattern.test(this.password);
+}
   },
   methods: {
     async login() {
